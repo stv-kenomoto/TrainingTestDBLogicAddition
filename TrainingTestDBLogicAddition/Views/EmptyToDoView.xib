@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmptyToDoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDO-fX-zce">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="wAi-5F-kxG"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_todo" translatesAutoresizingMaskIntoConstraints="NO" id="NqO-h1-5ZO"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31y-EV-ArF">
+                    <color key="backgroundColor" red="0.25882352939999997" green="0.64705882349999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="0o4-uj-cxB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="ToDoを登録してね！">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTouchButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="tLb-W1-Ajv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zDO-fX-zce" secondAttribute="trailing" id="58m-tj-k4O"/>
+                <constraint firstItem="zDO-fX-zce" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8Jy-tO-JZC"/>
+                <constraint firstItem="zDO-fX-zce" firstAttribute="bottom" secondItem="NqO-h1-5ZO" secondAttribute="bottom" constant="-30" id="I6C-VJ-Xa6"/>
+                <constraint firstItem="NqO-h1-5ZO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PDE-tl-u7A"/>
+                <constraint firstItem="31y-EV-ArF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RAe-20-rUT"/>
+                <constraint firstItem="31y-EV-ArF" firstAttribute="top" secondItem="NqO-h1-5ZO" secondAttribute="bottom" constant="22" id="mZc-75-x9O"/>
+                <constraint firstItem="zDO-fX-zce" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ofh-hj-fIN"/>
+                <constraint firstItem="zDO-fX-zce" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rmv-rz-6nQ"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_todo" width="200" height="200"/>
+    </resources>
+</document>

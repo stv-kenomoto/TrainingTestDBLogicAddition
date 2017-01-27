@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  TrainingTestDBLogicAddition
+
+  Created by Kouki Enomoto on 2017/01/24.
+  Copyright © 2017年 enomt. All rights reserved.
+*/
+
+"cancel" = "Cancel";
+"closed" = "完了";
+"closeToDo" = "このToDoを完了にしますか？";
+"closingFailed" = "完了に失敗しました";
+"dateFormat" = "yyyy/MM/dd";
+"decision" = "決定";
+"delete" = "削除";
+"deleteFailed" = "削除に失敗しました";
+"deleteToDo" = "このToDoを削除しますか？";
+"edit" = "編集";
+"ok" = "OK";
+"other" = "その他";
+"priorityLow" = "優先度1";
+"priorityMid" = "優先度2";
+"priorityHigh" = "優先度3";
+"private" = "個人";
+"requiredTitle" = "タイトルを入力してください";
+"savingFailed" = "保存に失敗しました";
+"todo" = "ToDo";
+"unclosed" = "未完了";
+"work" = "仕事";
